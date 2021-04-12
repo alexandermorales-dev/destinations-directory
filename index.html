@@ -10,6 +10,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav>
@@ -18,10 +23,10 @@
       </div>
       <div class="links-container">
         <div class="icons">
-          <a href="#"><i class="bi bi-geo-alt-fill"></i></a>
+          <a href="#"><i class="bi bi-search"></i></a>
           <a href="#"><i class="bi bi-person-fill"></i></a>
-          <a href="#"><i class="bi bi-envelope-fill"></i></a>
-          <a href="#"><i class="bi bi-house"></i></a>
+          <a href="#"><i class="bi bi-rss"></i></a>
+          <a href="#"><i class="bi bi-list"></i></a>
         </div>
       </div>
       <div class="links hidden">
@@ -34,16 +39,21 @@
       </div>
     </nav>
     <header class="header">
-      <img src="/assets/sanblas.png" alt="" />
+      <img src="/assets/sunset.png" alt="" />
+      <h1>Take a break and find a good place to relax...</h1>
       <form action="POST">
+        <label for="destination">Search by keyword:</label>
         <input
           class="shadow"
           type="text"
-          placeholder="Type your destination here"
-          size="20"
+          placeholder="Type your destination here..."
+          name="destination"
+          id="destination"
         />
-        <button class="shadow" type="button">Search</button>
+        <button class="btn-1" type="button">Search</button>
       </form>
+      <button class="btn-2" type="button">How it works</button>
+      <div class="overlay"></div>
     </header>
   </body>
 </html>

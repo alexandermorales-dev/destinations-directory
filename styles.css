@@ -2,13 +2,14 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 nav {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: black;
+  background-color: rgb(247, 101, 85);
 }
 
 .logo {
@@ -16,7 +17,7 @@ nav {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100px;
+  padding: 5px;
 }
 
 .logo img {
@@ -35,8 +36,8 @@ nav a {
   display: flex;
   justify-content: center;
   height: 30px;
-  background-color: rgb(133, 0, 0);
-  padding: 5px;
+  background-color: rgb(247, 101, 85);
+  padding-bottom: 10px;
 }
 
 .icons {
@@ -60,53 +61,88 @@ nav a {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 5 0vh;
+  height: 90vh;
   border-bottom: black 1px solid;
+  overflow: hidden;
+}
+
+h1 {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  top: 25%;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
 }
 
 .header img {
+  max-height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.507);
   width: 100%;
-  max-width: 100%;
-  max-height: 60%;
+  height: 100%;
+  z-index: 1;
 }
 
 .header form {
-  display: flex;
   position: absolute;
-  top: 30%;
-  width: 200px;
-  max-width: 250px;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 5px;
-  background-color: rgba(255, 255, 255, 0.644);
+  text-align: center;
+  top: 40%;
+  width: 80%;
+  height: 70px;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
   border-radius: 10px;
+}
+
+label {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.7rem;
 }
 
 input {
-  width: 50%;
-  border-radius: 10px;
+  width: 100%;
   outline: none;
   border-color: rgb(212, 212, 212);
   margin-bottom: 10px;
+  font-size: 0.9rem;
   max-width: 300px;
+  border-radius: 5px;
 }
 
-header button {
-  border-radius: 10px;
-  background-color: rgb(0, 54, 231);
+header .btn-1 {
+  background-color: rgb(247, 101, 85);
   color: white;
   font-weight: bold;
   text-transform: uppercase;
   padding: 5px;
   outline: none;
   font-size: 0.75rem;
-  width: 50%;
+  width: 100%;
   max-width: 200px;
+  border: none;
 }
 
-.shadow {
-  box-shadow: white 0px 0px 5px;
+.header .btn-2 {
+  position: absolute;
+  bottom: 25%;
+  font-weight: bold;
+  padding: 5px;
+  outline: none;
+  font-size: 0.75rem;
+  width: 40%;
+  max-width: 200px;
+  border: none;
+  z-index: 2;
+  border-radius: 5px;
 }
 
 .hidden {
