@@ -237,6 +237,7 @@ header .btn-1 {
   padding: 10px;
   justify-content: center;
 }
+
 .img-container img {
   width: 200px;
   height: 200px;
@@ -250,6 +251,49 @@ header .btn-1 {
   outline: none;
   border-color: transparent;
 }
+
+footer {
+  height: 200px;
+  display: flex;
+  color: white;
+  background-color: black;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.top-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  height: 30px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.footer-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  width: 100px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.top-links {
+  margin-left: 10px;
+}
+
+.footer-icon i {
+  font-size: 2rem;
+}
+
 @media only screen and (min-width: 768px) {
   nav {
     flex-direction: row;
@@ -356,6 +400,10 @@ header .btn-1 {
   }
   .header .btn-1 {
     background-color: rgb(247, 101, 85);
+  }
+
+  .header .btn-2 {
+    bottom: 40px;
   }
 
   .grid-steps {
