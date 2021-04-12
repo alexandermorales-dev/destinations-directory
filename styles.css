@@ -88,6 +88,10 @@ h1 {
   font-weight: bold;
 }
 
+h2 {
+  color: rgb(247, 101, 85);
+}
+
 .header img {
   height: 100%;
   width: 100%;
@@ -167,6 +171,42 @@ header .btn-1 {
 
 .hidden-sm {
   display: none;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(50px, auto);
+  border: 1px solid white;
+  width: 100%;
+}
+
+.img-row {
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  padding: 10px;
+}
+
+.title-row {
+  display: flex;
+  justify-content: center;
+}
+
+.steps p {
+  padding: 15px;
+  text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -270,7 +310,15 @@ header .btn-1 {
     width: 80%;
   }
 
+  .header form {
+    max-width: 300px;
+  }
   .header .btn-1 {
     background-color: rgb(247, 101, 85);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
