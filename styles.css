@@ -521,6 +521,47 @@ button {
   color: red;
 }
 
+.grid-text-container p {
+  margin: 20px;
+  padding: 20px;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(214, 213, 213);
+  height: 100px;
+}
+
+.cta i {
+  font-size: 2rem;
+}
+
+.cta h4 {
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+}
+
+.cta-text {
+  margin-left: 20px;
+}
+
+.map {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  max-height: 600px;
+  padding: 10px;
+}
+
+.map iframe {
+  max-width: 100%;
+  border: transparent;
+}
+
 /* /////////////////////////////  MEDIA QUERIES  ///////////////////////////////////////    */
 
 @media only screen and (min-width: 768px) {
@@ -624,6 +665,10 @@ button {
   .button-row {
     justify-content: flex-end;
   }
+
+  .map {
+    height: 500px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -632,11 +677,6 @@ button {
     align-items: center;
     padding: 10px 0;
     justify-content: flex-end;
-  }
-
-  ul {
-    display: flex;
-    padding-left: 0;
   }
 
   .d-lg {
