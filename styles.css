@@ -29,7 +29,6 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 100%; */
   padding: 5px;
 }
 
@@ -56,18 +55,10 @@ nav a {
 .links-container {
   display: flex;
   justify-content: center;
-  height: 30px;
-  background-color: rgb(247, 101, 85);
-  padding-bottom: 20px;
-}
-
-.icons {
-  display: flex;
-  justify-content: center;
   color: white;
 }
 
-.icons i {
+.links-container i {
   margin: 0 10px;
 }
 
