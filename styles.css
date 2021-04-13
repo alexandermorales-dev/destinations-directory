@@ -393,6 +393,20 @@ footer a {
   font-size: 0.7rem;
 }
 
+.search-results-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 40vh;
+  background-color: turquoise;
+  align-items: center;
+}
+
+.search-results-container form {
+  display: flex;
+  flex-direction: column;
+}
+
 /* MEDIA QUERIES */
 
 @media only screen and (min-width: 768px) {

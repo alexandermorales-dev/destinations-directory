@@ -16,5 +16,78 @@
       rel="stylesheet"
     />
   </head>
-  <body></body>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href=""> <img src="./assets/wwa-logo.png" alt="" /></a>
+      </div>
+      <div class="links-container">
+        <div class="icons">
+          <ul>
+            <li>
+              <a href=""
+                ><i class="bi bi-search"></i
+                ><span class="hidden-sm d-lg"> Destinations</span></a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><i class="bi bi-person-fill"></i
+                ><span class="hidden-sm d-lg">Contact Us</span></a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><i class="bi bi-rss"></i>
+                <span class="hidden-sm d-lg">About</span></a
+              >
+            </li>
+            <li>
+              <a href="/index.html"
+                ><i class="bi bi-list"></i
+                ><span class="hidden-sm d-lg">Home</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="search-results-container">
+      <h4>Filter by available dates, city, country or continent</h4>
+      <div class="filters-container">
+        <form action="">
+          <label for="date">Choose a date: </label>
+          <input type="date" id="date" />
+
+          <label for="city"> Choose a city: </label>
+          <select name="city" id="city">
+            <option value="new-york">New York</option>
+            <option value="chicago">Chicago</option>
+            <option value="san-francisco">San Francisco</option>
+            <option value="los-angeles">Los Angeles</option>
+            <option value="boston">Boston</option>
+            <option value="seattle">Seattle</option>
+          </select>
+
+          <label for="country">Choose a country: </label>
+          <select name="country" id="country">
+            <option value="USA">United States</option>
+            <option value="panama">Panama</option>
+            <option value="Germany">Germany</option>
+            <option value="Italy">Italy</option>
+            <option value="Greece">Greece</option>
+          </select>
+
+          <label for="continent"> Choose a continent: </label>
+          <select name="continent" id="continent">
+            <option value="north-merica">North America</option>
+            <option value="europe">Europe</option>
+            <option value="asia">Asia</option>
+            <option value="latin-america">Latin America</option>
+            <option value="middle-east">Middle East</option>
+          </select>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
