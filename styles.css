@@ -473,6 +473,7 @@ footer a {
 
   ul {
     display: flex;
+    padding-left: 0;
   }
 
   .d-lg {
