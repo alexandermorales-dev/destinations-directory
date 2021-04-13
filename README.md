@@ -4,19 +4,18 @@
 
 > Capstone Project - Inspired in Patashule website
 
-![screenshot](./screenshot.png)
+![screenshot](./assets/screenshot.png)
 
 In this project we have cloned [this](https://www.behance.net/gallery/25563385/PatashuleKE/) Patashule web page by using RWD concept. We have implemented HTML5 and CSS, making proper use of semantic tags in the HTML and Grid and Flexbox layout in the CSS.
 
 ## Built With
 
-- HTML5  
+- HTML5
 - CSS
 
 ## Live Demo
 
 [Live Demo Link](https://alexjustalex2020.github.io/capstone-directory/)
-
 
 ## Getting Started
 
@@ -42,7 +41,6 @@ In this project we have cloned [this](https://www.behance.net/gallery/25563385/P
 - Navigate to GitHub Pages section.
 - Select the appropriate branch.
 - Submit your changes.
-
 
 ## Author
 
