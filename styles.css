@@ -9,7 +9,7 @@ nav {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: rgb(247, 101, 85);
+  background-color: #d45649;
 }
 
 .logo {
@@ -78,18 +78,18 @@ nav a {
 
 h1 {
   position: absolute;
-  z-index: 2;
   color: white;
-  top: 25%;
+  top: 20%;
   padding: 10px;
   text-transform: uppercase;
   font-size: 1rem;
   text-align: center;
   font-weight: bold;
+  z-index: 2;
 }
 
 h2 {
-  color: rgb(247, 101, 85);
+  color: #d45649;
 }
 
 .header img {
@@ -221,7 +221,7 @@ header .btn-1 {
 }
 
 .description:nth-child(1) {
-  background-color: salmon;
+  background-color: #e27e66;
 }
 
 .description:nth-child(2) {
@@ -229,7 +229,7 @@ header .btn-1 {
 }
 
 .description:nth-child(3) {
-  background-color: rgb(43, 43, 250);
+  background-color: #519bd8;
 }
 
 .img-container {
@@ -247,14 +247,16 @@ header .btn-1 {
 
 .btn-description {
   padding: 10px;
+  margin-bottom: 20px;
   border-radius: 5px;
   outline: none;
   border-color: transparent;
 }
 
 footer {
-  height: 200px;
   display: flex;
+  height: 400px;
+  width: 100%;
   color: white;
   background-color: black;
 }
@@ -262,13 +264,30 @@ footer {
 footer a {
   text-decoration: none;
   color: white;
+  margin: 0 10px;
 }
 
-.top-links {
+.top-section {
+  padding-top: 50px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.top-links-left {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  margin-top: 20px;
+  height: 30px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.top-links-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
   height: 30px;
   border-top: 1px solid white;
@@ -279,20 +298,26 @@ footer a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
-  width: 100px;
-  height: 50px;
-  border: 2px solid white;
+  width: 80px;
+  height: 80px;
+  border: 1px solid white;
+  background-color: black;
   border-radius: 50%;
+  transform: translateY(-10px);
 }
 
 .top-links {
-  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .footer-icon i {
   font-size: 2rem;
 }
+
+/* MEDIA QUERIES */
 
 @media only screen and (min-width: 768px) {
   nav {
@@ -425,5 +450,9 @@ footer a {
   .txt-container {
     width: 50%;
     order: 1;
+  }
+
+  .hidden-sm {
+    display: block;
   }
 }
