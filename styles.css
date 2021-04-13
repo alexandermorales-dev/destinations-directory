@@ -25,6 +25,11 @@ h6 {
   text-align: center;
 }
 
+button {
+  border-radius: 5px;
+  width: max-content;
+}
+
 .logo {
   display: flex;
   justify-content: center;
@@ -406,11 +411,20 @@ footer a {
   font-size: 0.7rem;
 }
 
+.button-row button {
+  width: 100px;
+  background-color: rgb(23, 165, 247);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: transparent;
+}
+
 .search-box-container form {
   display: flex;
   flex-direction: column;
   font-weight: bold;
-  background-color: #eeeeee;
+  background-color: #eee;
   padding: 10px;
   border-radius: 10px;
 }
@@ -422,11 +436,6 @@ footer a {
 
 .btns-container {
   text-align: center;
-}
-
-button {
-  border-radius: 5px;
-  width: max-content;
 }
 
 .search-results-grid {
@@ -502,15 +511,6 @@ button {
   grid-column: 1 / -1;
   display: flex;
   justify-content: center;
-}
-
-.button-row button {
-  width: 100px;
-  background-color: rgb(23, 165, 247);
-  color: white;
-  font-weight: bold;
-  font-size: 1rem;
-  border: transparent;
 }
 
 .links-row {
