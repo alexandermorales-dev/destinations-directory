@@ -17,6 +17,8 @@
     />
   </head>
   <body>
+    <!-- nav bar  -->
+
     <nav>
       <div class="logo">
         <a href=""> <img src="./assets/wwa-logo.png" alt="" /></a>
@@ -52,14 +54,28 @@
         </div>
       </div>
     </nav>
-    <div class="search-results-container">
-      <h4>Filter by available dates, city, country or continent</h4>
+
+    <!-- title  -->
+
+    <div class="search-box-container">
+      <h4>
+        Filter by season, city, country, continent, or pickup at airport
+        availability
+      </h4>
+
+      <!-- filters container 
+     -->
       <div class="filters-container">
         <form action="">
-          <label for="date">Choose a date: </label>
-          <input type="date" id="date" />
+          <label for="season">Season: </label>
+          <select name="season" id="season">
+            <option value="sprinf">Spring</option>
+            <option value="summer">Summer</option>
+            <option value="fall">Fall</option>
+            <option value="winter">Winter</option>
+          </select>
 
-          <label for="city"> Choose a city: </label>
+          <label for="city"> City: </label>
           <select name="city" id="city">
             <option value="new-york">New York</option>
             <option value="chicago">Chicago</option>
@@ -69,7 +85,7 @@
             <option value="seattle">Seattle</option>
           </select>
 
-          <label for="country">Choose a country: </label>
+          <label for="country">Country: </label>
           <select name="country" id="country">
             <option value="USA">United States</option>
             <option value="panama">Panama</option>
@@ -78,7 +94,7 @@
             <option value="Greece">Greece</option>
           </select>
 
-          <label for="continent"> Choose a continent: </label>
+          <label for="continent"> Continent: </label>
           <select name="continent" id="continent">
             <option value="north-merica">North America</option>
             <option value="europe">Europe</option>
@@ -86,8 +102,128 @@
             <option value="latin-america">Latin America</option>
             <option value="middle-east">Middle East</option>
           </select>
+
+          <label for="pickup">Pick-up?</label>
+          <select name="pickup" id="pickup">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+          <div class="btns-container">
+            <button type="button" class="btn-filters">Search</button>
+            <button type="button" class="btn-filters">Clear filter</button>
+          </div>
         </form>
       </div>
+    </div>
+
+    <!-- search results  -->
+
+    <!-- title  -->
+
+    <h4>These are the results from your last search</h4>
+
+    <!-- grid  -->
+
+    <div class="search-results-grid">
+      <!-- result 1  -->
+      <a href=""
+        ><div class="result">
+          <div class="result-img-container">
+            <img src="/assets/destination-1.jpg" alt="" />
+          </div>
+          <div class="result-txt-container">
+            <h4>Location Name</h4>
+            <p>
+              This is a brief description of the location based on your search
+              results
+            </p>
+          </div>
+        </div></a
+      >
+
+      <!-- result 2  -->
+
+      <a href=""
+        ><div class="result">
+          <div class="result-img-container">
+            <img src="/assets/destination-1.jpg" alt="" />
+          </div>
+          <div class="result-txt-container">
+            <h4>Location Name</h4>
+            <p>
+              This is a brief description of the location based on your search
+              results
+            </p>
+          </div>
+        </div></a
+      >
+
+      <!-- result 3  -->
+
+      <a href=""
+        ><div class="result">
+          <div class="result-img-container">
+            <img src="/assets/destination-1.jpg" alt="" />
+          </div>
+          <div class="result-txt-container">
+            <h4>Location Name</h4>
+            <p>
+              This is a brief description of the location based on your search
+              results
+            </p>
+          </div>
+        </div></a
+      >
+      <!-- result 4  -->
+
+      <a href=""
+        ><div class="result">
+          <div class="result-img-container">
+            <img src="/assets/destination-1.jpg" alt="" />
+          </div>
+          <div class="result-txt-container">
+            <h4>Location Name</h4>
+            <p>
+              This is a brief description of the location based on your search
+              results
+            </p>
+          </div>
+        </div></a
+      >
+
+      <!-- result 5  -->
+
+      <a href=""
+        ><div class="result">
+          <div class="result-img-container">
+            <img src="/assets/destination-1.jpg" alt="" />
+          </div>
+          <div class="result-txt-container">
+            <h4>Location Name</h4>
+            <p>
+              This is a brief description of the location based on your search
+              results
+            </p>
+          </div>
+        </div></a
+      >
+
+      <!-- result 6  -->
+
+      <a href=""
+        ><div class="result">
+          <div class="result-img-container">
+            <img src="/assets/destination-1.jpg" alt="" />
+          </div>
+          <div class="result-txt-container">
+            <h4>Location Name</h4>
+            <p>
+              This is a brief description of the location based on your search
+              results
+            </p>
+          </div>
+        </div></a
+      >
     </div>
   </body>
 </html>
