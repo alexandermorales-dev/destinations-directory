@@ -236,17 +236,26 @@ header .btn-1 {
   background-color: #519bd8;
 }
 
-.img-container {
+.img-container-1,
+.img-container-2,
+.img-container-mobile {
   display: flex;
   padding: 10px;
   justify-content: center;
 }
 
-.img-container img {
+.img-container-1 > img,
+.img-container-2 > img {
   width: 200px;
   height: 200px;
   max-width: 100%;
   border-radius: 50%;
+}
+
+.img-container-mobile img {
+  width: 200px;
+  height: 200px;
+  max-width: 100%;
 }
 
 .btn-description {
@@ -462,20 +471,54 @@ button {
 
 .item-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 50px repeat(4, 1fr);
-  background-color: blue;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr;
+  grid-auto-rows: minmax(50px, auto);
   text-align: center;
-  /* padding: 20px; */
+  gap: 10px;
+  border-radius: 5px;
+  box-shadow: rgb(179, 179, 179) 0 0 15px;
+  margin: 20px;
+  padding: 20px;
 }
 
-.title-row {
+.item-title-row {
+  display: flex;
+  justify-content: center;
   grid-column: 1 / -1;
 }
 
 .row {
-  border: 1px white solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 50px;
+  border: 1px black solid;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.button-row {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+}
+
+.button-row button {
+  width: 100px;
+  background-color: rgb(23, 165, 247);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: transparent;
+}
+
+.links-row {
+  grid-column: 1/-1;
+}
+
+.links-row i {
+  color: red;
 }
 
 /* /////////////////////////////  MEDIA QUERIES  ///////////////////////////////////////    */
@@ -561,6 +604,26 @@ button {
     margin-top: 5%;
     grid-template-columns: 1fr 1fr;
   }
+
+  .item-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 1fr;
+    text-align: center;
+    gap: 10px;
+    border-radius: 5px;
+    box-shadow: rgb(179, 179, 179) 0 0 15px;
+    margin: 50px;
+    padding: 20px;
+  }
+
+  .item-title-row {
+    justify-content: left;
+  }
+
+  .button-row {
+    justify-content: flex-end;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -629,7 +692,9 @@ button {
     display: flex;
   }
 
-  .img-container {
+  .img-container-1,
+  .img-container-2,
+  .img-container-mobile {
     display: flex;
     width: 50%;
     justify-content: flex-end;
