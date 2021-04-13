@@ -6,7 +6,16 @@
 
 ![screenshot](./assets/screenshot.png)
 
-In this project we have cloned [this](https://www.behance.net/gallery/25563385/PatashuleKE/) Patashule web page by using RWD concept. We have implemented HTML5 and CSS, making proper use of semantic tags in the HTML and Grid and Flexbox layout in the CSS.
+In this project I have cloned [this](https://www.behance.net/gallery/25563385/PatashuleKE/) Patashule website by using RWD concept. I have implemented HTML5 and CSS, making proper use of semantic tags in the HTML and Grid and Flexbox layout in the CSS.
+
+## Instructions
+
+There are only 3 main sections that actually respond to user interaction. Please note the following:
+
+- index.html is the main page of the website
+- Search button in index.html header will take you to a Search Results Page (search-results.html)
+- Once in the Search Results Page, you can click on any images from the results and will take you to the description of the location selected.
+
 
 ## Built With
 
