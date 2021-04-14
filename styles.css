@@ -668,10 +668,6 @@ footer {
     max-height: 100%;
   }
 
-  .hidden-sm {
-    display: block;
-  }
-
   .footer-links-left {
     margin-right: 120px;
   }
@@ -773,6 +769,10 @@ footer {
 
   .header .btn-2 {
     bottom: 40px;
+  }
+
+  .hidden-sm {
+    display: block;
   }
 
   .grid-steps {
