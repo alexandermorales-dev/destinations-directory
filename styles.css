@@ -870,8 +870,14 @@ footer {
   }
 
   .txt-container {
+    margin-left: 10px;
+    text-align: left;
     width: 50%;
     order: 1;
+  }
+
+  .txt-container h4 {
+    text-align: left;
   }
 
   .footer-links-left {
