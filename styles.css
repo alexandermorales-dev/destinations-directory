@@ -178,10 +178,6 @@ header .btn-1 {
   border-radius: 5px;
 }
 
-.hidden-sm {
-  display: none;
-}
-
 .heading {
   display: flex;
   justify-content: center;
@@ -666,6 +662,10 @@ footer {
 
   .overlay {
     max-height: 100%;
+  }
+
+  .hidden-sm {
+    display: block;
   }
 
   .footer-links-left {
