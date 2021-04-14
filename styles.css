@@ -365,11 +365,15 @@ footer {
 
 .footer-icons {
   margin-left: 30px;
-  width: 50%;
+  width: 30%;
 }
 
 .footer-bottom-section i {
   margin: 0 10px;
+}
+
+.footer-copyright {
+  font-size: 14px;
 }
 
 .btn-bottom {
@@ -674,6 +678,10 @@ footer {
 
   .footer-links-right {
     transform: translateX(-15px);
+  }
+
+  .footer-md-right p {
+    padding: 0 15px;
   }
 
   .filters-container {
