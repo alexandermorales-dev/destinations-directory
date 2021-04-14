@@ -119,8 +119,10 @@ h2 {
 }
 
 .header form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
-  text-align: left;
   top: 40%;
   width: 80%;
   height: 70px;
@@ -130,20 +132,7 @@ h2 {
   border-radius: 10px;
 }
 
-form label {
-  width: 100%;
-  position: relative;
-  text-align: left;
-  left: 0;
-}
-
-input label {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 0.7rem;
-}
-
-input {
+header input {
   width: 100%;
   outline: none;
   border-color: rgb(212, 212, 212);
@@ -154,7 +143,6 @@ input {
 }
 
 header .btn-1 {
-  position: relative;
   background-color: rgb(247, 101, 85);
   color: white;
   font-weight: bold;
@@ -162,7 +150,7 @@ header .btn-1 {
   padding: 5px;
   outline: none;
   font-size: 0.75rem;
-  width: 100%;
+  width: max-content;
   max-width: 200px;
   border: none;
   left: 10%;
@@ -276,12 +264,13 @@ header .btn-1 {
 
 footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   position: relative;
   height: max-content;
-  width: 100%;
   color: white;
   background-color: black;
+  padding-bottom: 20px;
 }
 
 .footer-top-links {
@@ -289,30 +278,11 @@ footer {
   justify-content: center;
   align-items: center;
   height: max-content;
-  width: 100%;
   padding-top: 10px;
 }
 
 .footer-top-links a {
-  margin: 0 10px;
-}
-
-.footer-links-left,
-.footer-links-right {
-  display: flex;
-  width: max-content;
-  align-items: center;
-  height: 40px;
-  border-top: 1px white solid;
-  border-bottom: 1px white solid;
-}
-
-.footer-links-left {
-  margin-right: 90px;
-}
-
-.footer-links-right {
-  margin-left: -30px;
+  margin: 0 5px;
 }
 
 .footer-icon {
@@ -337,12 +307,14 @@ footer {
 .footer-md-section form {
   display: flex;
   margin: 15px;
+  justify-content: center;
 }
 
 .footer-md-section input {
   line-height: 2rem;
   background-color: black;
   border-color: rgb(202, 202, 202);
+  width: 50%;
 }
 
 .footer-md-section button {
@@ -363,11 +335,6 @@ footer {
   background-color: #1f1f1f;
   color: white;
   height: 50px;
-}
-
-.footer-icons {
-  margin-left: 30px;
-  width: 30%;
 }
 
 .footer-bottom-section i {
@@ -738,6 +705,37 @@ footer {
   .hidden-sm {
     display: block;
   }
+
+  /* .footer-links-left,
+.footer-links-right {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  height: 40px;
+  border-top: 1px white solid;
+  border-bottom: 1px white solid;
+}
+
+/* 
+.footer-links-left {
+  margin-right: 90px;
+}
+
+.footer-links-right {
+  margin-left: -30px;
+}
+
+.footer-icon {
+  display: flex;
+  position: absolute;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border: 2px white solid;
+  border-radius: 50%;
+} */
 
   .footer-links-left {
     margin-right: 120px;
