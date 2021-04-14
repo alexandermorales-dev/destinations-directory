@@ -308,6 +308,7 @@ footer {
 .footer-links-left {
   margin-right: 90px;
 }
+
 .footer-links-right {
   margin-left: -30px;
 }
@@ -370,8 +371,6 @@ footer {
 .footer-bottom-section i {
   margin: 0 10px;
 }
-
-/*  */
 
 .btn-bottom {
   position: relative;
