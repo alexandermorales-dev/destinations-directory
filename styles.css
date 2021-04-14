@@ -74,6 +74,10 @@ nav a {
   justify-content: right;
 }
 
+.txt-hidden {
+  display: none;
+}
+
 .header {
   position: relative;
   display: flex;
@@ -223,6 +227,7 @@ header .btn-1 {
 .description {
   text-align: center;
   color: white;
+  height: max-content;
 }
 
 .description:nth-child(1) {
@@ -283,8 +288,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: max-content;
   width: 100%;
+  padding-top: 10px;
 }
 
 .footer-top-links a {
@@ -596,6 +602,66 @@ footer {
 
 /* /////////////////////////////  MEDIA QUERIES  ///////////////////////////////////////    */
 
+@media only screen and (max-width: 425px) {
+  .hidden-sm {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-top-links {
+    flex-direction: column;
+    height: max-content;
+    align-items: center;
+  }
+
+  .footer-icon {
+    margin: 0;
+    margin-bottom: 10px;
+    order: 1;
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer-links-left {
+    border: unset;
+    margin: 0;
+    order: 2;
+    flex-direction: column;
+    height: max-content;
+  }
+
+  .footer-links-right {
+    border: unset;
+    margin: 0;
+    order: 3;
+    flex-direction: column;
+    height: max-content;
+  }
+
+  .footer-md-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-bottom-section {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .footer-icons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-copyright {
+    text-align: center;
+    width: 100%;
+    height: max-content;
+    justify-content: center;
+  }
+}
 @media only screen and (min-width: 768px) {
   nav {
     flex-direction: row;
@@ -641,6 +707,10 @@ footer {
     width: 100%;
   }
 
+  .txt-hidden {
+    display: none;
+  }
+
   .header input {
     position: relative;
     width: 70%;
@@ -674,6 +744,10 @@ footer {
 
   .footer-links-right {
     transform: translateX(-15px);
+  }
+
+  .footer-md-section {
+    margin-top: 10px;
   }
 
   .footer-md-right p {
