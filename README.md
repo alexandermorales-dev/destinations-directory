@@ -77,10 +77,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 License under [Creative Commons](https://creativecommons.org/licenses/by-nc/4.0/)
-
-On Wed, Apr 14, 2021 at 7:47 PM Henok Mekonnen Mossissa <notifications@github.com> wrote:
-@henatan99 commented on this pull request.Hi Alex, I have already approved your capstone, but before you merge the PR please make a single important change. The 'how it works' and 'search buttons overlap on 768px view. Have a look at
- 
-the attached screenshot.—
-You are receiving this because you modified the open/close state.
-Reply to this email directly, view it on GitHub, or unsubscribe. 
