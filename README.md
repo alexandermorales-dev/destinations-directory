@@ -6,14 +6,14 @@
 
 ![screenshot](./assets/screenshot.png)
 
-In this project I have cloned [this](https://www.behance.net/gallery/25563385/PatashuleKE/) Patashule website by using RWD concept. I have implemented HTML5 and CSS, making proper use of semantic tags in the HTML and Grid and Flexbox layout in the CSS.
+In this project, I have cloned [this](https://www.behance.net/gallery/25563385/PatashuleKE/) Patashule website by using RWD concept. I have implemented HTML5 and CSS, making proper use of semantic tags in the HTML and Grid and Flexbox layout in the CSS.
 
 ## Instructions
 
 There are only 3 main sections that actually respond to user interaction. Please note the following:
 
-- index.html is the main page of the website containint a search bar and brief description of the service/website
-- Search button in index.html header will take you to a Search Results Page (search-results.html)
+- index.html is the main page of the website containing a search bar and a brief description of the service/website
+- The search button in the index.html header will take you to a Search Results Page (search-results.html)
 - Once in the Search Results Page, you can click on any images from the results and will take you to the description of the location selected.
 
 
@@ -46,8 +46,8 @@ There are only 3 main sections that actually respond to user interaction. Please
 
 -You can deploy this project by cloning it then:
 
-- Goto the repository's settings.
-- Navigate to GitHub Pages section.
+- Go to the repository's settings.
+- Navigate to the GitHub Pages section.
 - Select the appropriate branch.
 - Submit your changes.
 
@@ -77,3 +77,10 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 License under [Creative Commons](https://creativecommons.org/licenses/by-nc/4.0/)
+
+On Wed, Apr 14, 2021 at 7:47 PM Henok Mekonnen Mossissa <notifications@github.com> wrote:
+@henatan99 commented on this pull request.Hi Alex, I have already approved your capstone, but before you merge the PR please make a single important change. The 'how it works' and 'search buttons overlap on 768px view. Have a look at
+ 
+the attached screenshot.—
+You are receiving this because you modified the open/close state.
+Reply to this email directly, view it on GitHub, or unsubscribe. 
