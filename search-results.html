@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Wide Adventures</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- nav bar  -->
+
+    <nav>
+      <div class="logo">
+        <a href=""> <img src="./assets/wwa-logo.png" alt="" /></a>
+      </div>
+      <div class="links-container">
+        <ul>
+          <li>
+            <a href=""
+              ><i class="bi bi-search"></i
+              ><span class="txt-hidden d-lg"> Destinations</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><i class="bi bi-person-fill"></i
+              ><span class="txt-hidden d-lg">Contact Us</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><i class="bi bi-rss"></i>
+              <span class="txt-hidden d-lg">About</span></a
+            >
+          </li>
+          <li>
+            <a href="/index.html"
+              ><i class="bi bi-list"></i
+              ><span class="txt-hidden d-lg">Home</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- title  -->
+
+    <div class="search-box-container">
+      <h4>
+        Filter by season, city, country, continent, or pickup at airport
+        availability
+      </h4>
+
+      <!-- filters container 
+     -->
+      <div class="filters-container">
+        <form action="#">
+          <label for="season">Season: </label>
+          <select name="season" id="season">
+            <option value="sprinf">Spring</option>
+            <option value="summer">Summer</option>
+            <option value="fall">Fall</option>
+            <option value="winter">Winter</option>
+          </select>
+
+          <label for="city"> City: </label>
+          <select name="city" id="city">
+            <option value="new-york">New York</option>
+            <option value="chicago">Chicago</option>
+            <option value="san-francisco">San Francisco</option>
+            <option value="los-angeles">Los Angeles</option>
+            <option value="boston">Boston</option>
+            <option value="seattle">Seattle</option>
+          </select>
+
+          <label for="country">Country: </label>
+          <select name="country" id="country">
+            <option value="USA">United States</option>
+            <option value="panama">Panama</option>
+            <option value="Germany">Germany</option>
+            <option value="Italy">Italy</option>
+            <option value="Greece">Greece</option>
+          </select>
+
+          <label for="continent"> Continent: </label>
+          <select name="continent" id="continent">
+            <option value="north-merica">North America</option>
+            <option value="europe">Europe</option>
+            <option value="asia">Asia</option>
+            <option value="latin-america">Latin America</option>
+            <option value="middle-east">Middle East</option>
+          </select>
+
+          <label for="pickup">Pick-up?</label>
+          <select name="pickup" id="pickup">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+          <div class="btns-container">
+            <button type="button" class="btn-filters">Search</button>
+            <button type="button" class="btn-filters">Clear filter</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- search results  -->
+
+    <!-- title  -->
+
+    <h4>These are the results from your last search</h4>
+
+    <!-- grid  -->
+
+    <div class="search-results-grid">
+      <!-- result 1  -->
+      <article class="result">
+        <div class="result-img-container">
+          <a href="/item-details.html">
+            <img src="/assets/sample-result.png" alt=""
+          /></a>
+          <h4>Location 1</h4>
+        </div>
+      </article>
+
+      <!-- result 2  -->
+
+      <article class="result">
+        <div class="result-img-container">
+          <a href="/item-details.html">
+            <img src="/assets/sample-result.png" alt=""
+          /></a>
+          <h4>Location 2</h4>
+        </div>
+      </article>
+
+      <!-- result 3  -->
+
+      <article class="result">
+        <div class="result-img-container">
+          <a href="/item-details.html">
+            <img src="/assets/sample-result.png" alt=""
+          /></a>
+          <h4>Location 3</h4>
+        </div>
+      </article>
+      <!-- result 4  -->
+
+      <article class="result">
+        <div class="result-img-container">
+          <a href="/item-details.html">
+            <img src="/assets/sample-result.png" alt=""
+          /></a>
+          <h4>Location 4</h4>
+        </div>
+      </article>
+
+      <!-- result 5  -->
+
+      <article class="result">
+        <div class="result-img-container">
+          <a href="/item-details.html">
+            <img src="/assets/sample-result.png" alt=""
+          /></a>
+          <h4>Location 5</h4>
+        </div>
+      </article>
+
+      <!-- result 6  -->
+
+      <article class="result">
+        <div class="result-img-container">
+          <a href="/item-details.html">
+            <img src="/assets/sample-result.png" alt=""
+          /></a>
+          <h4>Location 6</h4>
+        </div>
+      </article>
+    </div>
+
+    <!-- footer  -->
+
+    <footer class="hidden-sm">
+      <!-- top links  -->
+
+      <div class="footer-top-links">
+        <div class="footer-links-left">
+          <a href="">Home</a>
+          <a href="">Search</a>
+          <a href="">About Us</a>
+          <a href="">Advertise</a>
+        </div>
+        <div class="footer-icon">
+          <a href=""><i class="bi bi-geo-alt-fill"></i></a>
+        </div>
+        <div class="footer-links-right">
+          <a href="">Facebook</a>
+          <a href="">Twitter</a>
+          <a href="">Blog</a>
+          <a href="">Google+</a>
+        </div>
+      </div>
+
+      <!-- footer middle section  -->
+
+      <div class="footer-md-section">
+        <div class="footer-md-left">
+          <h4>SUBSCRIBE</h4>
+          <form action="#">
+            <input type="text" />
+            <button type="button">send</button>
+          </form>
+        </div>
+        <div class="footer-md-middle">
+          <h4>CONTACT</h4>
+          <p>Have a question?</p>
+          <span class="email">info@email.com</span>
+        </div>
+        <div class="footer-md-right">
+          <h4>ABOUT</h4>
+          <p>
+            This website served as training to apply and reinforce HTML semantic
+            tags, CSS styles and media queries knowledge
+          </p>
+        </div>
+      </div>
+
+      <!-- footer bottom section  -->
+
+      <div class="footer-bottom-section">
+        <div class="footer-icons">
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-twitter"></i> </a>
+          <a href=""><i class="bi bi-box"></i></a>
+          <a href=""><i class="bi bi-google"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+        </div>
+        <div class="footer-copyright">
+          <p>
+            World Wide Adventures &copy; All rights reserved powered by Acme
+            &trade;
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

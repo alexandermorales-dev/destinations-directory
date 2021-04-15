@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Wide Adventures</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- nav bar  -->
+
+    <nav>
+      <div class="logo">
+        <a href=""> <img src="./assets/wwa-logo.png" alt="" /></a>
+      </div>
+      <div class="links-container">
+        <ul>
+          <li>
+            <a href=""
+              ><i class="bi bi-search"></i
+              ><span class="txt-hidden d-lg"> Destinations</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><i class="bi bi-person-fill"></i
+              ><span class="txt-hidden d-lg">Contact Us</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><i class="bi bi-rss"></i>
+              <span class="txt-hidden d-lg">About</span></a
+            >
+          </li>
+          <li>
+            <a href="/index.html"
+              ><i class="bi bi-list"></i
+              ><span class="txt-hidden d-lg">Home</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="grid-text-container">
+      <!-- grid  -->
+      <div class="item-grid">
+        <!-- first row  -->
+        <div class="item-title-row">
+          <img src="/assets/item-logo.png" alt="" />
+        </div>
+        <!-- left  -->
+        <div class="item-col-left">
+          <div class="row"><strong> Ciudad</strong>: Panama City</div>
+          <div class="row"><strong>Country</strong>: Panama</div>
+          <div class="row"><strong>Continent</strong>: America</div>
+          <div class="row"><strong>Date</strong>: 04/13/2025</div>
+        </div>
+        <!-- right  -->
+        <div class="item-col-right">
+          <div class="row"><strong>Language</strong>: Spanish</div>
+          <div class="row"><strong>Population</strong>: 4246M (2019)</div>
+          <div class="row"><strong>Capital</strong>: Panama City</div>
+          <div class="row"><strong>Currency</strong>: PAB / USD</div>
+        </div>
+        <!-- button row  -->
+        <div class="button-row">
+          <button type="button"><i class="bi bi-envelope"></i> Buy</button>
+        </div>
+        <!-- links row  -->
+        <div class="links-row">
+          <i class="bi bi-telephone"></i> tel:+123 9876-1232
+          <i class="bi bi-truck"></i> transport:Yes
+          <i class="bi bi-laptop"></i> website: website.com
+          <i class="bi bi-person"></i> tickets sold: 873
+        </div>
+      </div>
+      <!-- text  -->
+      <p>
+        Here is a sample text with information from the the destination
+        selected. Here, you can find useful information such as population,
+        currency, language, etc.
+      </p>
+    </div>
+
+    <!-- call to action  -->
+
+    <div class="cta">
+      <i class="bi bi-cash-stack"></i>
+      <h4 class="cta-text"><a href="#"> click to view more details</a></h4>
+    </div>
+
+    <!-- map  -->
+    <!-- title  -->
+    <h4>MAP DIRECTIONS</h4>
+    <!-- map  -->
+
+    <div class="map">
+      <iframe
+        class="map m-3"
+        src="https://maps.google.com/maps?q=Global&amp;t=&amp;z=9&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+      >
+      </iframe>
+    </div>
+
+    <!-- footer  -->
+
+    <footer class="hidden-sm">
+      <!-- top links  -->
+
+      <div class="footer-top-links">
+        <div class="footer-links-left">
+          <a href="">Home</a>
+          <a href="">Search</a>
+          <a href="">About Us</a>
+          <a href="">Advertise</a>
+        </div>
+        <div class="footer-icon">
+          <a href=""><i class="bi bi-geo-alt-fill"></i></a>
+        </div>
+        <div class="footer-links-right">
+          <a href="">Facebook</a>
+          <a href="">Twitter</a>
+          <a href="">Blog</a>
+          <a href="">Google+</a>
+        </div>
+      </div>
+
+      <!-- footer middle section  -->
+
+      <div class="footer-md-section">
+        <div class="footer-md-left">
+          <h4>SUBSCRIBE</h4>
+          <form action="#">
+            <input type="text" />
+            <button type="button">send</button>
+          </form>
+        </div>
+        <div class="footer-md-middle">
+          <h4>CONTACT</h4>
+          <p>Have a question?</p>
+          <span class="email">info@email.com</span>
+        </div>
+        <div class="footer-md-right">
+          <h4>ABOUT</h4>
+          <p>
+            This website served as training to apply and reinforce HTML semantic
+            tags, CSS styles and media queries knowledge
+          </p>
+        </div>
+      </div>
+
+      <!-- footer bottom section  -->
+
+      <div class="footer-bottom-section">
+        <div class="footer-icons">
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-twitter"></i> </a>
+          <a href=""><i class="bi bi-box"></i></a>
+          <a href=""><i class="bi bi-google"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+        </div>
+        <div class="footer-copyright">
+          <p>
+            World Wide Adventures &copy; All rights reserved powered by Acme
+            &trade;
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
